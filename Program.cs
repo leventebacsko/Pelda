@@ -11,9 +11,6 @@ namespace GitDemo
         {
             var mintaTomb = new int[] {100, 1,2,3,5,7,6,10};
 
-            // Minimum keresés
-            Console.WriteLine(mintaTomb.Min());
-
             // Maximum keresés
             Console.WriteLine(mintaTomb.Max());
 
