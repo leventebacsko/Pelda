@@ -12,12 +12,13 @@ namespace GitDemo
         }
         public static void Output(this List<int> arr, string prefix) {
             prefix += ": ";
-            var listaString = "";
+            var listaString = new StringBuilder();
             foreach(var i in arr) {
-                listaString += 
-                    listaString.Length == 0 ? i.ToString() : ", " + i.ToString();
+                listaString.Append(
+                    listaString.Length == 0 ? i.ToString() : ", " + i.ToString()
+                );
             }
-            Console.WriteLine(prefix + listaString);
+            Console.WriteLine(prefix + listaString.ToString());
         }
     }
 }
