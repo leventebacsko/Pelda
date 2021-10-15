@@ -21,7 +21,9 @@ namespace GitDemo
             mintaTomb.OrderBy(x=>x).ToList().Output("Sorba rendezett");
 
             mintaTomb.OrderByDescending(x=>x).ToList().Output("Sorba rendezett csökkenő");
-
+            
+            // Keresés (filter)
+            mintaTomb.Where(x=> x<10 ).ToList().Output("Tíznél kisebb elemek");
         }
     }
 }
